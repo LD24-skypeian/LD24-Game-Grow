@@ -33,7 +33,7 @@ public class playerEnergy : MonoBehaviour {
 	
 	void energyLoss ()
 	{
-		Debug.Log("isMoving: " + TadPoleMovementController.isMoving);
+		//Debug.Log("isMoving: " + TadPoleMovementController.isMoving);
 
 		if (TadPoleMovementController.isMoving)
 		{
