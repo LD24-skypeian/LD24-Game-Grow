@@ -12,9 +12,12 @@ public class foodPills : MonoBehaviour {
 	}
 	
 	void Update () {
+		
 	}
 	
-	void OnTriggerEnter(Collider collider){
+	void OnTriggerEnter(Collider collider)
+	{
+		//Debug.Log("trigger tag:" + collider.gameObject.tag);
 		if (collider.gameObject.tag.Contains("Player")){
 			playerHealthCheck();
 			Destroy(gameObject);

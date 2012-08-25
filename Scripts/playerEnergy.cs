@@ -4,7 +4,8 @@ using System.Collections;
 public class playerEnergy : MonoBehaviour {
 	public int energy = 0;			// an adjustable amount of energy that is affected by Constant gameplay.
 	public int maxEnergy = 100;		//the maximum amount of energy the player will have.
-	public float timeEnergy = 2f;
+	public float maxTimeEnergy = 2f;
+	public float timeEnergy;
 	
 	private foodPills energyFood;
 	
@@ -30,15 +31,18 @@ public class playerEnergy : MonoBehaviour {
 		}
 	}
 	
-	void energyLoss () {
-		if (this.transform){
+	void energyLoss ()
+	{
+		//Debug.Log("isMoving: " + TadPoleMovementController.isMoving);
+
+		if (TadPoleMovementController.isMoving)
+		{
 			timeEnergy -= Time.deltaTime;
 		}
-		if (timeEnergy < 0f){
+		if (timeEnergy < 0f)
+		{
 			energy -= 1;
-			timeEnergy = timeEnergy;
-		}
-		
+			timeEnergy = maxTimeEnergy;
+		}		
 	}
-	
 }
