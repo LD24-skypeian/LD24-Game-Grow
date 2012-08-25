@@ -15,6 +15,7 @@ public class TadPoleMovementController : MonoBehaviour
 
     private void Update()
     {
+
         Movement();
 
         RotateToMouse();
@@ -27,16 +28,20 @@ public class TadPoleMovementController : MonoBehaviour
         
         #region Forward/Backward
 
+        isMoving = true;
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
-            isMoving = true;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0, -speed * Time.deltaTime, Space.Self);
-            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
         }
 
         #endregion
