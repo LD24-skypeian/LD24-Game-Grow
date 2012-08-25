@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class playerHealth : MonoBehaviour
 {
@@ -17,7 +18,13 @@ public class playerHealth : MonoBehaviour
         health = 100;
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void Update()
+    {
+        if (health > maxHealth)
+            health = maxHealth;
+    }
+
+    private void OnTriggerEnter(Collider other)
     {
         if (health != maxHealth)
         {

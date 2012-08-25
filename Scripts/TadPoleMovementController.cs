@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof (CharacterController))]
 public class TadPoleMovementController : MonoBehaviour
 {
+    public static bool isMoving;
+
     public Camera fixedCamera;
 
     public float speed = 10.0f;
@@ -13,36 +15,43 @@ public class TadPoleMovementController : MonoBehaviour
 
     private void Update()
     {
-        float adjustedRotateSpeed = rotateSpeed * 10.0f;
+        Movement();
 
-        //float x = Input.GetAxis("Horizontal") * Time.smoothDeltaTime * speed;
-        //float y = Input.GetAxis("Vertical") * Time.smoothDeltaTime * speed;
+        RotateToMouse();
+        
+    }
 
+    private void Movement()
+    {
+       // float adjustedRotateSpeed = rotateSpeed * 10.0f;
+        
         #region Forward/Backward
 
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
+            isMoving = true;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0, -speed * Time.deltaTime, Space.Self);
+            isMoving = true;
         }
 
         #endregion
 
         #region Rotate
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0, -adjustedRotateSpeed * Time.deltaTime, 0, Space.Self);
-        }
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    transform.Rotate(0, -adjustedRotateSpeed * Time.deltaTime, 0, Space.Self);
+        //}
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0, adjustedRotateSpeed * Time.deltaTime, 0, Space.Self);
-        }
+        //if (Input.GetKey(KeyCode.D))
+        //{
+        //    transform.Rotate(0, adjustedRotateSpeed * Time.deltaTime, 0, Space.Self);
+        //}
 
         #endregion
 
@@ -53,4 +62,29 @@ public class TadPoleMovementController : MonoBehaviour
 
         fixedCamera.transform.LookAt(gameObject.transform);
     }
+
+    private void RotateToMouse()
+    {
+        //Veriables
+        Vector3 ScreenMouse;
+        Vector3 ShipPos;
+
+        //Get Mouse Point ON screen
+        ScreenMouse.x = Input.mousePosition.x;
+        ScreenMouse.y = Input.mousePosition.y;
+        ScreenMouse.z = 1;
+
+        //Get Mouse Point In World
+        var WorldMouse = Camera.main.ScreenToWorldPoint(ScreenMouse);
+        //Get Ship Position
+        ShipPos = transform.position;
+
+        WorldMouse.y = transform.position.y;
+
+        //Get Angle Of Mouse From Ship Position
+        transform.LookAt(WorldMouse);
+
+        
+    }
+
 }
