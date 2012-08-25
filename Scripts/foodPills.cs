@@ -12,10 +12,17 @@ public class foodPills : MonoBehaviour {
 	}
 	
 	void Update () {
-		 playerHealthCheck();
+		playerHealthCheck();
 	}
 	
-	void playerHealthCheck () {
+	void OnTriggerEnter(Collider collider){
+		if (collider.gameObject.tag.Contains("Player")){
+			Destroy(gameObject);
+		}
+	}
+	
+	//checks if the player is at full hp, if he is, the energy pills will get all of the energy and health points.
+	void playerHealthCheck () {						
 		if (pHealth.health == pHealth.maxHealth){
 			energyPills = energyPills + healthPills;
 		} else {

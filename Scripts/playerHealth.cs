@@ -15,7 +15,12 @@ public class playerHealth : MonoBehaviour {
 		health = 100;	
 	}
 	
-	void OnCollisionEnter (Collision other) {
+	void Update () {
+		if (health > maxHealth)
+			health = maxHealth;
+	}
+	
+	void OnTriggerEnter (Collider other) {
 		if (health != maxHealth){
 			if (other.gameObject.tag.Contains ("food")) {
 				health = health + healthFood.healthPills;
