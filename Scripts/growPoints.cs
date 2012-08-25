@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 //Have this script add up the total of growPoints.
 
