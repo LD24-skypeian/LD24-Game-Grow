@@ -14,13 +14,14 @@ public class playerEnergy : MonoBehaviour {
 	}
 	
 	void Start () {
-		energy = 100;
+		energy = 23;
 	}
 	
 	void Update () {
 		if (energy > maxEnergy)
 			energy = maxEnergy;
 		energyLoss();
+		playerSpeed();
 	}
 	
 	void OnTriggerEnter (Collider other) {
@@ -44,5 +45,16 @@ public class playerEnergy : MonoBehaviour {
 			energy -= 1;
 			timeEnergy = maxTimeEnergy;
 		}		
+	}
+	
+	void playerSpeed (){
+		if (energy < 20){
+			TadPoleMovementController.speed *= .75f;
+		} else if (energy < 10){
+			TadPoleMovementController.speed *= .50f;
+		} else {
+			TadPoleMovementController.speed = TadPoleMovementController.baseSpeed;
+		}
+			
 	}
 }
