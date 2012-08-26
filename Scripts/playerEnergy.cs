@@ -57,7 +57,6 @@ public class playerEnergy : MonoBehaviour
         {
             energy = 0;
             TadPoleMovementController.speed = TadPoleMovementController.baseSpeed * .15f;
-        
         }
     }
 
