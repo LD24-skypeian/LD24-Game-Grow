@@ -7,11 +7,6 @@ public class bulletScript : MonoBehaviour {
 	
 	public Vector3 bulletMaxDistance;
 	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		this.gameObject.transform.Translate(Vector3.forward * (bulletSpeed * Time.deltaTime));

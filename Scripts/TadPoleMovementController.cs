@@ -81,7 +81,7 @@ public class TadPoleMovementController : MonoBehaviour
         fixedCamera.transform.LookAt(gameObject.transform);
     }
 
-    private void RotateToMouse()
+    public void RotateToMouse()
     {
         //Veriables
         Vector3 ScreenMouse;

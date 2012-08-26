@@ -2211,8 +2211,8 @@ SkinnedMeshRenderer:
   - {fileID: 476361345}
   m_RootBone: {fileID: 539079234}
   m_AABB:
-    m_Center: {x: .378724575, y: -2.57264066, z: .102759361}
-    m_Extent: {x: 2.4110117, y: 9.52292538, z: 2.94924402}
+    m_Center: {x: .376295447, y: -2.57165313, z: .102759361}
+    m_Extent: {x: 2.40858269, y: 9.52193737, z: 2.94924402}
   m_DirtyAABB: 0
 --- !u!1 &476361344
 GameObject:
@@ -6768,7 +6768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267013340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.8758507, y: -.0291721821, z: -10.2107525}
+  m_LocalPosition: {x: -.017903896, y: .0416173935, z: -.514212072}
   m_LocalScale: {x: 1.87043893, y: 1, z: .433667809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -8902,6 +8902,18 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .45451957
       objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.47998047
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 7.71220398
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 91.8011627
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_RootGameObject: {fileID: 1803568641}
@@ -10405,16 +10417,16 @@ Animation:
   m_GameObject: {fileID: 1803568641}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+  m_Animation: {fileID: 7400002, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_Animations:
-  - {fileID: 7400000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+  - {fileID: 7400002, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
   m_UserAABB:
-    m_Center: {x: -.0438132286, y: .0227999687, z: -.00363540649}
-    m_Extent: {x: 3.45233822, y: 2.37019777, z: 9.36712074}
+    m_Center: {x: -.0450091362, y: .0193576813, z: -.00220298767}
+    m_Extent: {x: 3.4462986, y: 2.36666346, z: 9.36369324}
 --- !u!1 &1808405610
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,11 @@ public class playerShoot : MonoBehaviour {
 	
 	public GameObject Bullet;
 	
+	private TadPoleMovementController tadPoleMovement;
+	
+	void Awake () {
+		tadPoleMovement = GameObject.Find ("Player").GetComponent<TadPoleMovementController>();
+	}
 	// Use this for initialization
 	void Start () {
 		attackTimer = 2.0f;
