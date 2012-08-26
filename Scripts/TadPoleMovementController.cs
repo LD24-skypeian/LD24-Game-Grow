@@ -53,12 +53,11 @@ public class TadPoleMovementController : MonoBehaviour
 
     private void Movement()
     {
-
         #region Forward/Backward
 
         isMoving = true;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetMouseButton(0))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
         }

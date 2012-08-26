@@ -46,10 +46,18 @@ public class playerEnergy : MonoBehaviour
         {
             timeEnergy -= Time.deltaTime;
         }
+
         if (timeEnergy < 0f)
         {
             energy -= 1;
             timeEnergy = maxTimeEnergy;
+        }
+
+        if (energy <= 0f)
+        {
+            energy = 0;
+            TadPoleMovementController.speed = TadPoleMovementController.baseSpeed * .15f;
+        
         }
     }
 

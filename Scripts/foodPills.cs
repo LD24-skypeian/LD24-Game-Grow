@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class foodPills : MonoBehaviour
 {
-    public int energyPills = 20;
-    public int healthPills = 20;
+    public int energyPills = 10;
+    public int healthPills = 10;
 
     private playerHealth pHealth;
 
