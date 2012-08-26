@@ -12,7 +12,7 @@ public class bulletScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.transform.Translate(0, 0, bulletSpeed * Time.deltaTime);
+		this.gameObject.transform.Translate(0, 0, -(bulletSpeed * Time.deltaTime));
 	}
 	
 	void OnCollisionEnter (Collision other){
