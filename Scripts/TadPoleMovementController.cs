@@ -53,7 +53,6 @@ public class TadPoleMovementController : MonoBehaviour
 
     private void Movement()
     {
-
         #region Forward/Backward
 
         isMoving = true;
