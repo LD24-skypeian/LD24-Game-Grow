@@ -22,7 +22,7 @@ public class bulletScript : MonoBehaviour {
 	
 	void OnCollisionEnter (Collision other){
 		if (other.gameObject.collider){
-			Destroy(this.gameObject);
+			//Destroy(this.gameObject);
 		}
 	}
 }
