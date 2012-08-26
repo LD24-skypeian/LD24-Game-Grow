@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 12.0f;
+    public float speed = 1.0f;
     public float wanderYaw = 0;
     private float wanderVal = 0;
     private float wanderCount = 0;
@@ -32,9 +32,11 @@ public class EnemyMovement : MonoBehaviour
     {
         myMoveObj.inYawRate = foeTurnRate;
 
-        WanderSphere();
+        //WanderSphere();
 
         transform.Translate(0, 0, speed * Time.deltaTime);
+
+        GameManager.WrapToScreen(gameObject);
     }
 
     /// <summary>
@@ -60,6 +62,6 @@ public class EnemyMovement : MonoBehaviour
         helper.transform.Rotate(Vector3.up, wanderYaw); //+myMoveObj.curYaw
 
         seekPoint = transform.position + helper.transform.forward * 10f;
-        transform.LookAt(seekPoint);
+       // transform.LookAt(helper.transform);
     }
 }
