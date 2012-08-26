@@ -4,7 +4,7 @@ public class playerEnergy : MonoBehaviour
 {
     public int energy = 0; // an adjustable amount of energy that is affected by Constant gameplay.
     public int maxEnergy = 100; //the maximum amount of energy the player will have.
-	public int bulletEnergy = 5;
+    public int bulletEnergy = 5;
     public float maxTimeEnergy = 2f;
     public float timeEnergy;
 
@@ -24,8 +24,6 @@ public class playerEnergy : MonoBehaviour
     {
         if (energy > maxEnergy)
             energy = maxEnergy;
-		if (energy < 0)
-			energy = 0;
         energyLoss();
         playerSpeed();
     }
@@ -61,11 +59,12 @@ public class playerEnergy : MonoBehaviour
             energy = 0;
             TadPoleMovementController.speed = TadPoleMovementController.baseSpeed * .15f;
         }
-		
-		//bullet energy loss.
-		if (gameObject.GetComponentInChildren<playerShoot>().isCreated == false){
-			energy -= bulletEnergy;
-		}
+
+        if (gameObject.GetComponentInChildren<playerShoot>().isCreated == false)
+        {
+            energy -= bulletEnergy;
+        }
+
     }
 
     private void playerSpeed()

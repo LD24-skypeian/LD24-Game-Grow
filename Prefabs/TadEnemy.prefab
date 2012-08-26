@@ -11,9 +11,11 @@ GameObject:
   - 111: {fileID: 11100000}
   - 143: {fileID: 14300000}
   - 54: {fileID: 5400000}
-  m_Layer: 0
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  m_Layer: 8
   m_Name: TadEnemy
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +29,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 137: {fileID: 13700000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +44,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +59,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine2_ncl1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +74,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine1_ncl1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +89,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +104,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +119,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +134,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +149,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +164,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +179,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +194,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,9 +207,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.1478386, y: .593167543, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalRotation: {x: 0, y: .475851446, z: 0, w: .879525661}
+  m_LocalPosition: {x: -28.4557228, y: 1.12577248, z: -3.11887622}
+  m_LocalScale: {x: .49999997, y: .5, z: .499999911}
   m_Children:
   - {fileID: 400022}
   - {fileID: 400024}
@@ -387,6 +389,38 @@ Animation:
   m_UserAABB:
     m_Center: {x: -.0450091362, y: .0193576813, z: -.00220298767}
     m_Extent: {x: 3.4462986, y: 2.36666346, z: 9.36369324}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38beb4d34aac02a4e804cec32702f119, type: 1}
+  m_Name: 
+  speed: 5
+  wanderYaw: .579999983
+  foeTurnRate: 180
+  seekPointObject:
+  - {fileID: 0}
+  seekPoint: {x: 0, y: 0, z: 0}
+  myMoveObj: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7663120df3cf64995f2717a4fb68fc, type: 1}
+  m_Name: 
+  inputDx: 0
+  inputDy: 0
+  inMoveRate: 10
+  inYawRate: 400
+  isFacing: 0
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -399,7 +433,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: ba63cf7799c457f4a926a22596ce532b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

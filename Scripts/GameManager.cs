@@ -7,10 +7,20 @@ public class GameManager : MonoBehaviour
     private playerHealth pHealth;
     private playerEnergy pEnergy;
 
+    private static BoxCollider Top;
+    private static BoxCollider Bot;
+    private static BoxCollider Left;
+    private static BoxCollider Right;
+
     private void Awake()
     {
         pHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<playerHealth>();
         pEnergy = GameObject.FindGameObjectWithTag("Player").GetComponent<playerEnergy>();
+
+        Top = GameObject.Find("Top").GetComponent<BoxCollider>();
+        Bot = GameObject.Find("Bottom").GetComponent<BoxCollider>();
+        Left = GameObject.Find("Left").GetComponent<BoxCollider>();
+        Right = GameObject.Find("Right").GetComponent<BoxCollider>();
     }
 
     private void OnGUI()
@@ -31,17 +41,17 @@ public class GameManager : MonoBehaviour
         //GUI.Label(new Rect(10, 100, 70, 40), "Timer");
     }
 
-    //public void WrapToScreen()
-    //{
-    //    if (gameObject.transform.position.z > Top.transform.position.z)
-    //        transform.position = new Vector3(transform.position.x, transform.position.y, Bot.transform.position.z + 5.0f);
-    //    else if (gameObject.transform.position.z < Bot.transform.position.z)
-    //        transform.position = new Vector3(transform.position.x, transform.position.y, Top.transform.position.z - 5.0f);
-    //    else if (gameObject.transform.position.x < Left.transform.position.x)
-    //        transform.position = new Vector3(Right.transform.position.x - 5.0f, transform.position.y, transform.position.z);
-    //    else if (gameObject.transform.position.x > Right.transform.position.x)
-    //        transform.position = new Vector3(Left.transform.position.x + 5.0f, transform.position.y, transform.position.z);
-    //}
+    public static void WrapToScreen(GameObject go)
+    {
+        if (go.transform.position.z > Top.transform.position.z)
+            go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y, Bot.transform.position.z + 5.0f);
+        else if (go.transform.position.z < Bot.transform.position.z)
+            go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y, Top.transform.position.z - 5.0f);
+        else if (go.transform.position.x < Left.transform.position.x)
+            go.transform.position = new Vector3(Right.transform.position.x - 5.0f, go.transform.position.y, go.transform.position.z);
+        else if (go.transform.position.x > Right.transform.position.x)
+            go.transform.position = new Vector3(Left.transform.position.x + 5.0f, go.transform.position.y, go.transform.position.z);
+    }
 
     public static void RotateToMouse(GameObject go)
     {
