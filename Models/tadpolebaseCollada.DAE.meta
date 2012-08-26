@@ -23,7 +23,7 @@ ModelImporter:
     - name: idle
       firstFrame: 1
       lastFrame: 25
-      wrapMode: 0
+      wrapMode: 2
       loop: 1
   meshes:
     lODScreenPercentages: []
