@@ -22,19 +22,23 @@ public class TadPoleMovementController : MonoBehaviour
     private BoxCollider Left;
     private BoxCollider Right;
 
+    private Animation myAnimation;
+
     private void Awake()
     {
         Top = GameObject.Find("Top").GetComponent<BoxCollider>();
         Bot = GameObject.Find("Bottom").GetComponent<BoxCollider>();
         Left = GameObject.Find("Left").GetComponent<BoxCollider>();
         Right = GameObject.Find("Right").GetComponent<BoxCollider>();
+
+        myAnimation = GetComponentInChildren<Animation>();
     }
 
     private void Update()
     {
         Movement();
 
-        RotateToMouse();
+        GameManager.RotateToMouse(gameObject);
 
         WrapToScreen();
     }
@@ -60,12 +64,13 @@ public class TadPoleMovementController : MonoBehaviour
         if (Input.GetKey(KeyCode.W) || Input.GetMouseButton(0))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
+            myAnimation.animation.Play();
         }
 
-        else if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(0, 0, -speed * Time.deltaTime, Space.Self);
-        }
+        //else if (Input.GetKey(KeyCode.S))
+        //{
+        //    transform.Translate(0, 0, -speed * Time.deltaTime, Space.Self);
+        //}
         else
         {
             isMoving = false;
@@ -81,23 +86,6 @@ public class TadPoleMovementController : MonoBehaviour
         fixedCamera.transform.LookAt(gameObject.transform);
     }
 
-    private void RotateToMouse()
-    {
-        //Veriables
-        Vector3 ScreenMouse;
-
-        //Get Mouse Point ON screen
-        ScreenMouse.x = Input.mousePosition.x;
-        ScreenMouse.y = Input.mousePosition.y;
-        ScreenMouse.z = 1;
-
-        //Get Mouse Point In World
-        var WorldMouse = Camera.main.ScreenToWorldPoint(ScreenMouse);
-
-        WorldMouse.y = transform.position.y;
-
-        //Get Angle Of Mouse From Ship Position
-        transform.LookAt(WorldMouse);
-    }
+    
 
 }
