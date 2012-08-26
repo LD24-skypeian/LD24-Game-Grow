@@ -2211,8 +2211,8 @@ SkinnedMeshRenderer:
   - {fileID: 476361345}
   m_RootBone: {fileID: 539079234}
   m_AABB:
-    m_Center: {x: .378724575, y: -2.57264066, z: .102759361}
-    m_Extent: {x: 2.4110117, y: 9.52292538, z: 2.94924402}
+    m_Center: {x: .376295447, y: -2.57165313, z: .102759361}
+    m_Extent: {x: 2.40858269, y: 9.52193737, z: 2.94924402}
   m_DirtyAABB: 0
 --- !u!1 &476361344
 GameObject:
@@ -4440,6 +4440,7 @@ GameObject:
   - 33: {fileID: 892346720}
   - 135: {fileID: 892346721}
   - 23: {fileID: 892346719}
+  - 114: {fileID: 892346723}
   - 114: {fileID: 892346722}
   m_Layer: 0
   m_Name: food
@@ -4456,7 +4457,7 @@ Transform:
   m_GameObject: {fileID: 892346717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.6794739, y: 1, z: 14.2820969}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4473,7 +4474,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4505,6 +4506,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892346717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &892346723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 917826672}
   m_GameObject: {fileID: 892346717}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6767,10 +6781,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267013340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.8758507, y: -.0291721821, z: -10.2107525}
+  m_LocalRotation: {x: 0, y: .347966582, z: 0, w: .937506974}
+  m_LocalPosition: {x: -.017903896, y: .0416173935, z: .397916496}
   m_LocalScale: {x: 1.87043893, y: 1, z: .433667809}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 40.7259827, z: 0}
   m_Children: []
   m_Father: {fileID: 362784670}
 --- !u!114 &1267013342
@@ -6880,6 +6894,7 @@ GameObject:
   - 33: {fileID: 1275219145}
   - 135: {fileID: 1275219146}
   - 23: {fileID: 1275219144}
+  - 114: {fileID: 1275219148}
   - 114: {fileID: 1275219147}
   m_Layer: 0
   m_Name: food
@@ -6896,7 +6911,7 @@ Transform:
   m_GameObject: {fileID: 1275219142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.6794739, y: 1, z: -21.7654495}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6913,7 +6928,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -6945,6 +6960,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1275219142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1275219148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2131550441}
   m_GameObject: {fileID: 1275219142}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -7544,6 +7572,7 @@ GameObject:
   - 33: {fileID: 1406181523}
   - 135: {fileID: 1406181524}
   - 23: {fileID: 1406181522}
+  - 114: {fileID: 1406181526}
   - 114: {fileID: 1406181525}
   m_Layer: 0
   m_Name: food
@@ -7560,7 +7589,7 @@ Transform:
   m_GameObject: {fileID: 1406181520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.0692787, y: 1, z: -10.9217892}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7577,7 +7606,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -7609,6 +7638,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406181520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1406181526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1054811692}
   m_GameObject: {fileID: 1406181520}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -8902,6 +8944,18 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .45451957
       objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.47998047
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 7.71220398
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 91.8011627
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_RootGameObject: {fileID: 1803568641}
@@ -8918,6 +8972,7 @@ GameObject:
   - 33: {fileID: 1629243681}
   - 135: {fileID: 1629243682}
   - 23: {fileID: 1629243680}
+  - 114: {fileID: 1629243684}
   - 114: {fileID: 1629243683}
   m_Layer: 0
   m_Name: food
@@ -8934,7 +8989,7 @@ Transform:
   m_GameObject: {fileID: 1629243678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.72230911, y: 1, z: -21.7654495}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8951,7 +9006,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -8983,6 +9038,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1629243678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1629243684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 181518947}
   m_GameObject: {fileID: 1629243678}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9326,6 +9394,7 @@ GameObject:
   - 33: {fileID: 1672659790}
   - 135: {fileID: 1672659791}
   - 23: {fileID: 1672659789}
+  - 114: {fileID: 1672659793}
   - 114: {fileID: 1672659792}
   m_Layer: 0
   m_Name: food
@@ -9342,7 +9411,7 @@ Transform:
   m_GameObject: {fileID: 1672659787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 28.3569355, y: 1, z: 14.2820969}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9359,7 +9428,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9391,6 +9460,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672659787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1672659793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897747148}
   m_GameObject: {fileID: 1672659787}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -10405,16 +10487,16 @@ Animation:
   m_GameObject: {fileID: 1803568641}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+  m_Animation: {fileID: 7400002, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_Animations:
-  - {fileID: 7400000, guid: c5c32d779d404564298c905c26ed5210, type: 3}
+  - {fileID: 7400002, guid: c5c32d779d404564298c905c26ed5210, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
   m_UserAABB:
-    m_Center: {x: -.0438132286, y: .0227999687, z: -.00363540649}
-    m_Extent: {x: 3.45233822, y: 2.37019777, z: 9.36712074}
+    m_Center: {x: -.0450091362, y: .0193576813, z: -.00220298767}
+    m_Extent: {x: 3.4462986, y: 2.36666346, z: 9.36369324}
 --- !u!1 &1808405610
 GameObject:
   m_ObjectHideFlags: 0
@@ -10795,6 +10877,7 @@ GameObject:
   - 33: {fileID: 1873287622}
   - 135: {fileID: 1873287623}
   - 23: {fileID: 1873287621}
+  - 114: {fileID: 1873287625}
   - 114: {fileID: 1873287624}
   m_Layer: 0
   m_Name: food
@@ -10811,7 +10894,7 @@ Transform:
   m_GameObject: {fileID: 1873287619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.75516701, y: 1, z: 0}
-  m_LocalScale: {x: .872006238, y: .872006238, z: .872006238}
+  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10828,7 +10911,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -10860,6 +10943,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873287619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1873287625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1650129087}
   m_GameObject: {fileID: 1873287619}
   m_Enabled: 1
   m_EditorHideFlags: 0

@@ -66,7 +66,7 @@ public class TadPoleMovementController : MonoBehaviour
         if (Input.GetKey(KeyCode.W) || Input.GetMouseButton(0))
         {
             transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
-            myAnimation.animation.Play();
+            //myAnimation.animation.Play();
         }
 
         //else if (Input.GetKey(KeyCode.S))

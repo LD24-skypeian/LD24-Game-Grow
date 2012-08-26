@@ -4,17 +4,15 @@ using System.Collections;
 public class bulletScript : MonoBehaviour {
 	public int bulletSpeed = 10;
 	public int bulletDamage = 0;
+	public Vector3 bulletDirection;
 	
-	public Vector3 bulletMaxDistance;
-	
-	// Use this for initialization
 	void Start () {
-	
+		GameManager.RotateToMouse(gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.transform.Translate(Vector3.forward * (bulletSpeed * Time.deltaTime));
+		this.gameObject.transform.Translate(0, 0, bulletSpeed * Time.deltaTime);
 	}
 	
 	void OnCollisionEnter (Collision other){

@@ -5,6 +5,9 @@ public class playerShoot : MonoBehaviour {
 	public float attackTimer = 0.0f;
 	public float coolDown = 2.0f;
 	
+	private Vector3 playerPosition;
+	private Vector3 targetPosition;
+	
 	public GameObject Bullet;
 	
 	// Use this for initialization
@@ -15,6 +18,7 @@ public class playerShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		GameManager.RotateToMouse(gameObject);
 		
 		if (attackTimer > 0){
 			attackTimer -= Time.deltaTime;
