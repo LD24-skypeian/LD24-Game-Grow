@@ -3,13 +3,14 @@ using System.Collections;
 
 public class bulletScript : MonoBehaviour {
 	public int bulletSpeed = 10;
-	public int bulletDamage = 0;
+	public int bulletDamage = 3;
 	public float bulletLife = 3f;
 
 	public Vector3 bulletDirection;
 	
 	void Start () {
 		GameManager.RotateToMouse(gameObject);
+		
 	}
 	
 	// Update is called once per frame
@@ -21,11 +22,9 @@ public class bulletScript : MonoBehaviour {
 			Destroy(this.gameObject);
 	}
 	
-	void OnCollisionEnter (Collision other){
-		if (other.gameObject.collider){
-			bulletDamage = 5;
-			Destroy(this);
+	void OnTriggerEnter (Collider other) {
+		if (other.gameObject.tag == "TadEnemy"){
+			Destroy (this.gameObject);
 		}
 	}
-	
 }

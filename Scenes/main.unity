@@ -798,6 +798,18 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
+      propertyPath: m_TagString
+      value: TadEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .499999911
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
   m_RootGameObject: {fileID: 1803568641}
@@ -2090,7 +2102,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 408241530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2317,7 +2329,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463875028}
   - 137: {fileID: 463875029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2361,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1d1ff69bc6b2394499490bf86c36b97a, type: 2}
+  - {fileID: 2100000, guid: ba63cf7799c457f4a926a22596ce532b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2383,7 +2395,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 476361345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2946,7 +2958,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 539079234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3886,9 +3898,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d521ae0f5085f1040a7b132864208f6b, type: 1}
   m_Name: 
+  isCreated: 1
   attackTimer: 0
   coolDown: 2
-  isCreated: 1
   Bullet: {fileID: 100000, guid: e9f98923eefc2ed4da03d46642abe52d, type: 2}
 --- !u!1001 &750846113
 Prefab:
@@ -5216,7 +5228,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 917962551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine1_ncl1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5284,7 +5296,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 944442346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigHub003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8600,7 +8612,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1514304259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8816,7 +8828,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1535928331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9247,7 +9259,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1601112725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine2_ncl1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9815,7 +9827,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1670068857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10424,7 +10436,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 1773281061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10939,10 +10951,13 @@ GameObject:
   - 111: {fileID: 1803568643}
   - 143: {fileID: 1803568644}
   - 54: {fileID: 1803568648}
+  - 114: {fileID: 1803568647}
+  - 114: {fileID: 1803568646}
   - 114: {fileID: 1803568645}
-  m_Layer: 0
+  - 65: {fileID: 1803568649}
+  m_Layer: 8
   m_Name: TadEnemy
-  m_TagString: Player
+  m_TagString: TadEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10955,7 +10970,7 @@ Transform:
   m_GameObject: {fileID: 1803568641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 38.1478386, y: .593167543, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalScale: {x: .49999997, y: .5, z: .499999911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 539079234}
@@ -11004,12 +11019,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 1803568641}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4335e3bf35ce744bbadc09413c1d3bf, type: 1}
+  m_Name: 
+  health: 10
+  damageReceived: 0
+  bDamage: {fileID: 11400000, guid: e9f98923eefc2ed4da03d46642abe52d, type: 2}
+--- !u!114 &1803568646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: c78a9e00feca60341a0d555cc979e019,
+    type: 2}
+  m_PrefabInternal: {fileID: 119219464}
+  m_GameObject: {fileID: 1803568641}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7663120df3cf64995f2717a4fb68fc, type: 1}
+  m_Name: 
+  inputDx: 0
+  inputDy: 0
+  inMoveRate: 10
+  inYawRate: 400
+  isFacing: 0
+--- !u!114 &1803568647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: c78a9e00feca60341a0d555cc979e019,
+    type: 2}
+  m_PrefabInternal: {fileID: 119219464}
+  m_GameObject: {fileID: 1803568641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38beb4d34aac02a4e804cec32702f119, type: 1}
   m_Name: 
+  speed: 5
   wanderYaw: .579999983
+  foeTurnRate: 180
   seekPointObject:
-  - {fileID: 56107672}
+  - {fileID: 0}
   seekPoint: {x: 0, y: 0, z: 0}
+  myMoveObj: {fileID: 0}
 --- !u!54 &1803568648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11026,6 +11074,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1803568649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803568641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 15}
+  m_Center: {x: 2, y: 0, z: 0}
 --- !u!1 &1808405610
 GameObject:
   m_ObjectHideFlags: 0
@@ -13048,7 +13108,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 2089871015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CATRigSpine5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
