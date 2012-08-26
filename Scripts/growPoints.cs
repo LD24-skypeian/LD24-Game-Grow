@@ -6,7 +6,7 @@ public class growPoints : MonoBehaviour
 {
     private float timer = 0f;
     private float coolDown = 6.0f;
-    public int growPoint = 0; //the grow points
+    public static int GrowPoints = 0; //the grow points
 
     private void Update()
     {
@@ -42,6 +42,6 @@ public class growPoints : MonoBehaviour
     //player gains GP.
     private void growPointCounter()
     {
-        growPoint += 1;
+        GrowPoints += 1;
     }
 }
