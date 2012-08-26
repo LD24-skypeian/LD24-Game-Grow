@@ -9,7 +9,7 @@ public class foodPills : MonoBehaviour
 
     private void Awake()
     {
-        pHealth = GameObject.Find("Player").GetComponent<playerHealth>();
+        pHealth = GameObject.FindWithTag("Player").GetComponent<playerHealth>();
     }
     
     private void OnTriggerEnter(Collider collider)
