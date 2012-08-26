@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class playerShoot : MonoBehaviour {
-	public float attackTimer = 0.0f;
+public class playerShoot : MonoBehaviour 
+{
+    public bool isCreated = true;
+    public float attackTimer = 0.0f;
 	public float coolDown = 2.0f;
 	
 	private Vector3 playerPosition;
@@ -18,10 +20,12 @@ public class playerShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		GameManager.RotateToMouse(gameObject);
+		//GameManager.RotateToMouse(gameObject);
 		
 		if (attackTimer > 0){
+
 			attackTimer -= Time.deltaTime;
+		    isCreated = true;
 		}
 		if (attackTimer < 0){
 			attackTimer = 0;
@@ -30,6 +34,7 @@ public class playerShoot : MonoBehaviour {
 			if(attackTimer == 0){
 				buttonToShoot();
 				attackTimer = coolDown;
+			    isCreated = false;
 			}
 		}
 	}

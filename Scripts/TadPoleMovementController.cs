@@ -32,8 +32,6 @@ public class TadPoleMovementController : MonoBehaviour
         Right = GameObject.Find("Right").GetComponent<BoxCollider>();
 
         myAnimation = GetComponentInChildren<Animation>();
-
-        Debug.Log(Vector3.forward);
     }
 
     private void Update()

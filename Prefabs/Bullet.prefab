@@ -42,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7b399a5c5b3da1140ac0eb487b7ad115, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9c4cdeab88b9d469735ab2d675fc4f, type: 1}
   m_Name: 
-  bulletSpeed: 10
+  bulletSpeed: 25
   bulletDamage: 0
   bulletDirection: {x: 0, y: 0, z: 0}
 --- !u!135 &13500000
