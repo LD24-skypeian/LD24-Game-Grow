@@ -14,7 +14,7 @@ public class playerEnergy : MonoBehaviour {
 	}
 	
 	void Start () {
-		energy = 23;
+		energy = 100;
 	}
 	
 	void Update () {
