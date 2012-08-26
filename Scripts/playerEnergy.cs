@@ -16,7 +16,7 @@ public class playerEnergy : MonoBehaviour
     
     private void Start()
     {
-        energy = 23;
+        energy = 100;
     }
 
     private void Update()
