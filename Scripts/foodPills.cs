@@ -11,12 +11,7 @@ public class foodPills : MonoBehaviour
     {
         pHealth = GameObject.Find("Player").GetComponent<playerHealth>();
     }
-
-    private void Update()
-    {
-
-    }
-
+    
     private void OnTriggerEnter(Collider collider)
     {
         //Debug.Log("trigger tag:" + collider.gameObject.tag);

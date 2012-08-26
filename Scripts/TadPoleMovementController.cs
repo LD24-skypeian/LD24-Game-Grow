@@ -1,6 +1,9 @@
 using UnityEngine;
 
 [RequireComponent(typeof (CharacterController))]
+[RequireComponent(typeof (Rigidbody))]
+[RequireComponent(typeof (playerHealth))]
+[RequireComponent(typeof (playerEnergy))]
 public class TadPoleMovementController : MonoBehaviour
 {
 

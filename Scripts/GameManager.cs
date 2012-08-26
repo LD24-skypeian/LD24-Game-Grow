@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         GUI.Label(new Rect(10, 50, 70, 20), "Speed");
         GUI.Label(new Rect(80, 50, 70, 20), TadPoleMovementController.speed.ToString());
 
-        GUI.Label(new Rect(10, 70, 70, 20), "Grow Points");
+        GUI.Label(new Rect(10, 70, 90, 20), "Grow Points");
         //GUI.Label(new Rect(80, 70, 70, 20), );
 
         //GUI.Label(new Rect(10, 100, 70, 40), "Timer");
