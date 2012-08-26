@@ -42,4 +42,23 @@ public class GameManager : MonoBehaviour
     //    else if (gameObject.transform.position.x > Right.transform.position.x)
     //        transform.position = new Vector3(Left.transform.position.x + 5.0f, transform.position.y, transform.position.z);
     //}
+
+    public static void RotateToMouse(GameObject go)
+    {
+        //Veriables
+        Vector3 ScreenMouse;
+
+        //Get Mouse Point ON screen
+        ScreenMouse.x = Input.mousePosition.x;
+        ScreenMouse.y = Input.mousePosition.y;
+        ScreenMouse.z = 1;
+
+        //Get Mouse Point In World
+        var WorldMouse = Camera.main.ScreenToWorldPoint(ScreenMouse);
+
+        WorldMouse.y = go.transform.position.y;
+
+        //Get Angle Of Mouse From Ship Position
+        go.transform.LookAt(WorldMouse);
+    }
 }
