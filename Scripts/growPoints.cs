@@ -12,7 +12,7 @@ public class growPoints : MonoBehaviour
     {
         timeUntilGP();
     }
-
+	
     //if the player hits something, it resets the counter, otherwise, after 6 seconds, the player gains a GP
     private void timeUntilGP()
     {

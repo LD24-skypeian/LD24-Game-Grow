@@ -21,13 +21,13 @@ public class enemyDamage : MonoBehaviour {
 			coolDown = 0f;
 		if (coolDown == 0f){
 			dealDamage = true;
-			coolDown = initialCoolDown;
 		}
 	}
 	
 	void OnTriggerEnter (Collider other) {
 		if ((other.gameObject.tag.Contains("Player")) && (dealDamage == true)){
 			pHealth.Health -= Damage;
+			coolDown = initialCoolDown;
 			dealDamage = false;
 		}
 	}
