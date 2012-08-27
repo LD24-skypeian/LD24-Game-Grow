@@ -17,12 +17,8 @@ public class TadPoleMovementController : MonoBehaviour
     public float cameraHeight = 50f;
     public float cameraSpeed = 10.0f;
     
-    private Animation myAnimation;
-
     private void Awake()
     {
-
-        myAnimation = GetComponentInChildren<Animation>();
     }
 
     private void Update()
