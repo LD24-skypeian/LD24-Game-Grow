@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: ed2b8c05136963b4faa8a9afc4743e48
+guid: 26a7efe6aa754a247a70ec72baefeb1d
 ModelImporter:
   fileIDToRecycleName:
-    4300000: lilly_01
+    4300000: Plane001
   serializedVersion: 10
   materials:
     importMaterials: 1
