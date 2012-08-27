@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d67e9488efd693e44bd377dcf31c2bec
+guid: cd0e2fb1b7b333f49bff2ef44aaf392c
 ModelImporter:
   fileIDToRecycleName:
-    4300000: Stork
-    7400000: Take 001 //// stork_textured
-    7400002: idle //// stork_textured
+    4300000: Group1
+    7400000: Take 001 //// tadpole_swim_better_FIXED_UVs
+    7400002: idle //// tadpole_swim_better_FIXED_UVs
   serializedVersion: 10
   materials:
     importMaterials: 1
@@ -23,7 +23,7 @@ ModelImporter:
     - name: idle
       firstFrame: 1
       lastFrame: 100
-      wrapMode: 0
+      wrapMode: 2
       loop: 0
   meshes:
     lODScreenPercentages: []
@@ -47,51 +47,97 @@ ModelImporter:
     //RootNode:
       data:
         first: 1
-        second: a0860100
+        second: b4860100
       data:
         first: 4
-        second: 801a0600
+        second: 941a0600
       data:
         first: 111
         second: 605fa900
-    Box002:
+    CATRigHub001:
       data:
         first: 1
-        second: a4860100
+        second: b2860100
       data:
         first: 4
-        second: 841a0600
-    Stork:
+        second: 921a0600
+    CATRigHub002:
       data:
         first: 1
-        second: a6860100
+        second: b8860100
       data:
         first: 4
-        second: 861a0600
-      data:
-        first: 23
-        second: 60182300
-      data:
-        first: 33
-        second: a05a3200
-    polySurface2:
-      data:
-        first: 1
-        second: aa860100
-      data:
-        first: 4
-        second: 8a1a0600
-    transform2:
+        second: 981a0600
+    CATRigHub003:
       data:
         first: 1
         second: a8860100
       data:
         first: 4
         second: 881a0600
-    transform4:
+    CATRigSpine1:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
+    CATRigSpine1_ncl1_1:
+      data:
+        first: 1
+        second: ac860100
+      data:
+        first: 4
+        second: 8c1a0600
+    CATRigSpine2:
       data:
         first: 1
         second: a2860100
       data:
         first: 4
         second: 821a0600
+    CATRigSpine2_ncl1_1:
+      data:
+        first: 1
+        second: aa860100
+      data:
+        first: 4
+        second: 8a1a0600
+    CATRigSpine3:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
+    CATRigSpine4:
+      data:
+        first: 1
+        second: b0860100
+      data:
+        first: 4
+        second: 901a0600
+    CATRigSpine5:
+      data:
+        first: 1
+        second: ae860100
+      data:
+        first: 4
+        second: 8e1a0600
+    Character001:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+    Group1:
+      data:
+        first: 1
+        second: b6860100
+      data:
+        first: 4
+        second: 961a0600
+      data:
+        first: 137
+        second: a00bd100

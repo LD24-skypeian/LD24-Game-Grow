@@ -7,7 +7,7 @@ public class playerHealth : MonoBehaviour
     public int maxHealth = 100; //the maximum amount of health the player will have.
 
     private foodPills healthFood;
-
+    
     private void Awake()
     {
         healthFood = GameObject.Find("food").GetComponent<foodPills>();
