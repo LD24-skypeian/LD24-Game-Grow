@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: d67e9488efd693e44bd377dcf31c2bec
+guid: 259b66c258635174a92855d36f7bbdd3
 ModelImporter:
   fileIDToRecycleName:
-    4300000: Stork
-    7400000: Take 001 //// stork_textured
-    7400002: idle //// stork_textured
+    4300000: Group1
   serializedVersion: 10
   materials:
     importMaterials: 1
@@ -19,12 +17,7 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations:
-    - name: idle
-      firstFrame: 1
-      lastFrame: 100
-      wrapMode: 0
-      loop: 0
+    clipAnimations: []
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -52,46 +45,11 @@ ModelImporter:
         first: 4
         second: 801a0600
       data:
-        first: 111
-        second: 605fa900
-    Box002:
-      data:
-        first: 1
-        second: a4860100
-      data:
-        first: 4
-        second: 841a0600
-    Stork:
-      data:
-        first: 1
-        second: a6860100
-      data:
-        first: 4
-        second: 861a0600
-      data:
         first: 23
         second: 60182300
       data:
         first: 33
         second: a05a3200
-    polySurface2:
       data:
-        first: 1
-        second: aa860100
-      data:
-        first: 4
-        second: 8a1a0600
-    transform2:
-      data:
-        first: 1
-        second: a8860100
-      data:
-        first: 4
-        second: 881a0600
-    transform4:
-      data:
-        first: 1
-        second: a2860100
-      data:
-        first: 4
-        second: 821a0600
+        first: 111
+        second: 605fa900
