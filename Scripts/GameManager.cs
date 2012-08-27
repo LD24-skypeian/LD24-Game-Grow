@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 
     private playerHealth pHealth;
     private playerEnergy pEnergy;
+	public int phealth;
 
     private static BoxCollider Top;
     private static BoxCollider Bot;
