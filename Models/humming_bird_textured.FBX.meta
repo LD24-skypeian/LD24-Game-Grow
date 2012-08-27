@@ -5,6 +5,7 @@ ModelImporter:
     4300000: humming_bird
     7400000: Take 001 //// humming_bird_textured
     7400002: idle //// humming_bird_textured
+    7400004: WingFlap //// humming_bird_textured
   serializedVersion: 10
   materials:
     importMaterials: 1
@@ -20,11 +21,11 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     clipAnimations:
-    - name: idle
+    - name: WingFlap
       firstFrame: 1
-      lastFrame: 25
-      wrapMode: 0
-      loop: 0
+      lastFrame: 99
+      wrapMode: 2
+      loop: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1

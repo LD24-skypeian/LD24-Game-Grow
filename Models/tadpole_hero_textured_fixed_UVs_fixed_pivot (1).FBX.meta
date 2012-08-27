@@ -22,9 +22,9 @@ ModelImporter:
     clipAnimations:
     - name: idle
       firstFrame: 1
-      lastFrame: 25
+      lastFrame: 90
       wrapMode: 2
-      loop: 1
+      loop: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1

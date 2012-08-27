@@ -207,9 +207,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: -.744656324, z: 0, w: .667448163}
-  m_LocalPosition: {x: 10.7202959, y: 1, z: 3.76580763}
-  m_LocalScale: {x: .49999997, y: .5, z: .5}
+  m_LocalRotation: {x: 0, y: .353489518, z: 0, w: .935438514}
+  m_LocalPosition: {x: 9.3884306, y: 1, z: -19.2672386}
+  m_LocalScale: {x: .49999994, y: .5, z: .499999911}
   m_Children:
   - {fileID: 400022}
   - {fileID: 400024}
@@ -363,7 +363,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
-  m_Mass: 5000
+  m_Mass: 50000
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
@@ -466,13 +466,13 @@ CharacterController:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 3.50999999
+  m_Height: 8.71000004
+  m_Radius: 4.90868568
   m_SlopeLimit: 45
   m_StepOffset: .300000012
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
-  m_Center: {x: 2.80999994, y: .839999974, z: 6.44999981}
+  m_Center: {x: 3.3900001, y: 2.08999991, z: 6.44999981}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
