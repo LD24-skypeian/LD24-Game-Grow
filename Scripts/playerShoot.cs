@@ -12,10 +12,12 @@ public class playerShoot : MonoBehaviour
 	
 	public GameObject Bullet;
 	
+	public playerEnergy pEnergy;
+	
 	// Use this for initialization
 	void Start () {
+//		pEnergy = this.gameObject.GetComponent<playerEnergy>();
 		attackTimer = 2.0f;
-		
 	}
 	
 	// Update is called once per frame
@@ -30,7 +32,7 @@ public class playerShoot : MonoBehaviour
 		if (attackTimer < 0){
 			attackTimer = 0;
 		}
-		if ((Input.GetKey(KeyCode.Space)) && (GetComponent<playerEnergy>().energy > 5)){
+		if ((Input.GetKey(KeyCode.Space)) && (pEnergy.Energy >= 5)){
 			if(attackTimer == 0){
 				buttonToShoot();
 				attackTimer = coolDown;
