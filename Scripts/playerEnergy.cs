@@ -3,16 +3,27 @@ using UnityEngine;
 public class playerEnergy : MonoBehaviour
 {
     public int energy = 0; // an adjustable amount of energy that is affected by Constant gameplay.
-    public int maxEnergy = 100; //the maximum amount of energy the player will have.
+    public int maxEnergy = 50; //the maximum amount of energy the player will have.
     public int bulletEnergy = 5;
+	public int healthLoss;
+	
+	public float _energyLossTime = 3f;
+	public float _coolDown = 3f;
     public float maxTimeEnergy = 2f;
     public float timeEnergy;
 
     private foodPills energyFood;
+	private playerHealth pHealth;
+	
+	public int Energy{
+		get {return energy;}
+		set {energy = value;}
+	}
 
     private void Awake()
     {
         energyFood = GameObject.Find("food").GetComponent<foodPills>();
+		pHealth = this.gameObject.GetComponent<playerHealth>();
     }
     
     private void Start()
@@ -28,6 +39,15 @@ public class playerEnergy : MonoBehaviour
         playerSpeed();
 		if (energy < 0)
 			energy = 0;
+		
+		if (_energyLossTime > 0)
+			_energyLossTime -= Time.deltaTime;
+		if (_energyLossTime < 0)
+			_energyLossTime = 0f;
+		if (_energyLossTime == 0){
+			_energyLossTime = _coolDown;
+			playerHealthLoss();
+		}
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,12 +82,31 @@ public class playerEnergy : MonoBehaviour
             TadPoleMovementController.speed = TadPoleMovementController.baseSpeed * .15f;
         }
 
-        if (gameObject.GetComponentInChildren<playerShoot>().isCreated == false)
+        if ((gameObject.GetComponentInChildren<playerShoot>().isCreated == false) && (energy > 5))
         {
             energy -= bulletEnergy;
         }
 
     }
+	
+	private void playerHealthLoss (){
+		
+		if (energy > 20){
+			healthLoss = 0;
+		}
+		if (energy < 20){
+			healthLoss = 2;
+			pHealth.Health -= healthLoss;
+		}
+		if (energy < 10){
+			healthLoss = 3;
+			pHealth.Health -= healthLoss;
+		}
+		if (energy < 5){
+			healthLoss = 4;
+			pHealth.Health -= healthLoss;
+		}
+	}
 
     private void playerSpeed()
     {

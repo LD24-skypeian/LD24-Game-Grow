@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: TadPlayer
   m_TagString: Player
@@ -416,6 +417,9 @@ MonoBehaviour:
   energy: 0
   maxEnergy: 100
   bulletEnergy: 5
+  healthLoss: 0
+  _energyLossTime: 3
+  _coolDown: 3
   maxTimeEnergy: 2
   timeEnergy: 0
 --- !u!114 &11400002
@@ -443,6 +447,21 @@ MonoBehaviour:
   fixedCamera: {fileID: 0}
   cameraHeight: 25
   cameraSpeed: 10
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d521ae0f5085f1040a7b132864208f6b, type: 1}
+  m_Name: 
+  isCreated: 1
+  attackTimer: 0
+  coolDown: 2
+  Bullet: {fileID: 100000, guid: e9f98923eefc2ed4da03d46642abe52d, type: 2}
+  pEnergy: {fileID: 11400000}
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

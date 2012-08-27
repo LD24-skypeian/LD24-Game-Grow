@@ -19,7 +19,7 @@ public class foodPills : MonoBehaviour
         {
             playerHealthCheck();
             Destroy(gameObject);
-        }
+		}
     }
 
     //checks if the player is at full hp, if he is, the energy pills will get all of the energy and health points.

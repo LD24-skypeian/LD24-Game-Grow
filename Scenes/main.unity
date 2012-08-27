@@ -323,44 +323,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!1 &56107670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 56107671}
-  - 114: {fileID: 56107672}
-  m_Layer: 0
-  m_Name: SeekPoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &56107671
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 56107670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.1421108, y: 0, z: -13.3824158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 416741667}
---- !u!114 &56107672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 56107670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2200176241aef45b71167a11348ecd, type: 1}
-  m_Name: 
 --- !u!1 &63656838
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +780,8 @@ Prefab:
       propertyPath: pHealth
       value: 
       objectReference: {fileID: 1509835254}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c78a9e00feca60341a0d555cc979e019, type: 2}
   m_RootGameObject: {fileID: 1803568641}
   m_IsPrefabParent: 0
@@ -1672,6 +1635,9 @@ MonoBehaviour:
   energy: 0
   maxEnergy: 100
   bulletEnergy: 5
+  healthLoss: 0
+  _energyLossTime: 3
+  _coolDown: 3
   maxTimeEnergy: 2
   timeEnergy: 0
 --- !u!114 &362784678
@@ -2130,38 +2096,6 @@ Transform:
   m_Children:
   - {fileID: 1670068857}
   m_Father: {fileID: 539079234}
---- !u!1 &416741666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 416741667}
-  m_Layer: 0
-  m_Name: SeekPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &416741667
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 416741666}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 2019078876}
-  - {fileID: 1563780241}
-  - {fileID: 56107671}
-  - {fileID: 658041561}
-  - {fileID: 535250409}
-  m_Father: {fileID: 0}
 --- !u!1 &417821987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,44 +2701,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!1 &535250408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 535250409}
-  - 114: {fileID: 535250410}
-  m_Layer: 0
-  m_Name: SeekPoint5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &535250409
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 535250408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.0691099, y: 0, z: 1.07110214}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 416741667}
---- !u!114 &535250410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 535250408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2200176241aef45b71167a11348ecd, type: 1}
-  m_Name: 
 --- !u!1 &537520577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,44 +3463,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 5, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!1 &658041560
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 658041561}
-  - 114: {fileID: 658041562}
-  m_Layer: 0
-  m_Name: SeekPoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &658041561
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 658041560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.2111111, y: 0, z: 26.4771423}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 416741667}
---- !u!114 &658041562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 658041560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2200176241aef45b71167a11348ecd, type: 1}
-  m_Name: 
 --- !u!1 &678216029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3923,6 +3781,7 @@ MonoBehaviour:
   attackTimer: 0
   coolDown: 2
   Bullet: {fileID: 100000, guid: e9f98923eefc2ed4da03d46642abe52d, type: 2}
+  pEnergy: {fileID: 1509835255}
 --- !u!1001 &750846113
 Prefab:
   m_ObjectHideFlags: 0
@@ -4851,6 +4710,7 @@ GameObject:
   - 135: {fileID: 892346721}
   - 23: {fileID: 892346719}
   - 114: {fileID: 892346723}
+  - 114: {fileID: 892346724}
   - 114: {fileID: 892346722}
   m_Layer: 0
   m_Name: food
@@ -4867,8 +4727,8 @@ Transform:
   m_GameObject: {fileID: 892346717}
   m_LocalRotation: {x: 0, y: .782989442, z: 0, w: .622035086}
   m_LocalPosition: {x: -32.6794739, y: 1, z: 14.2820969}
-  m_LocalScale: {x: .381705135, y: .275836796, z: 2.89867496}
-  m_LocalEulerAnglesHint: {x: 0, y: 103.07019, z: 0}
+  m_LocalScale: {x: .381705135, y: .370000154, z: 2.89867496}
+  m_LocalEulerAnglesHint: {x: 0, y: 103.070213, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &892346719
@@ -4884,7 +4744,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4897,7 +4757,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 917826672}
   m_GameObject: {fileID: 892346717}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &892346721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4927,6 +4787,19 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 917826672}
+  m_GameObject: {fileID: 892346717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &892346724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 917826672}
   m_GameObject: {fileID: 892346717}
@@ -6783,7 +6656,8 @@ Prefab:
       propertyPath: health
       value: 100
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400006, guid: 4edfb59560f36ca47aca8041bc3e1084, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4edfb59560f36ca47aca8041bc3e1084, type: 2}
   m_RootGameObject: {fileID: 1509835248}
   m_IsPrefabParent: 0
@@ -7409,6 +7283,7 @@ GameObject:
   - 135: {fileID: 1275219146}
   - 23: {fileID: 1275219144}
   - 114: {fileID: 1275219148}
+  - 114: {fileID: 1275219149}
   - 114: {fileID: 1275219147}
   m_Layer: 0
   m_Name: food
@@ -7425,8 +7300,8 @@ Transform:
   m_GameObject: {fileID: 1275219142}
   m_LocalRotation: {x: 0, y: -.361605048, z: 0, w: .932331383}
   m_LocalPosition: {x: -32.6794739, y: 1, z: -21.7654495}
-  m_LocalScale: {x: .381705105, y: .275836796, z: 2.89867544}
-  m_LocalEulerAnglesHint: {x: 0, y: -42.3976135, z: 0}
+  m_LocalScale: {x: .370000154, y: .370000154, z: 2.89867544}
+  m_LocalEulerAnglesHint: {x: 0, y: -42.3976212, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &1275219144
@@ -7442,7 +7317,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -7455,7 +7330,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 2131550441}
   m_GameObject: {fileID: 1275219142}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &1275219146
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7485,6 +7360,19 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2131550441}
+  m_GameObject: {fileID: 1275219142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1275219149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 2131550441}
   m_GameObject: {fileID: 1275219142}
@@ -8087,6 +7975,7 @@ GameObject:
   - 135: {fileID: 1406181524}
   - 23: {fileID: 1406181522}
   - 114: {fileID: 1406181526}
+  - 114: {fileID: 1406181527}
   - 114: {fileID: 1406181525}
   m_Layer: 0
   m_Name: food
@@ -8103,8 +7992,8 @@ Transform:
   m_GameObject: {fileID: 1406181520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.0692787, y: 1, z: -10.9217892}
-  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .370000154, y: .370000154, z: .370000154}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &1406181522
@@ -8120,7 +8009,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -8133,7 +8022,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1054811692}
   m_GameObject: {fileID: 1406181520}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &1406181524
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8163,6 +8052,19 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1054811692}
+  m_GameObject: {fileID: 1406181520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1406181527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 1054811692}
   m_GameObject: {fileID: 1406181520}
@@ -8632,6 +8534,9 @@ MonoBehaviour:
   energy: 0
   maxEnergy: 100
   bulletEnergy: 5
+  healthLoss: 0
+  _energyLossTime: 3
+  _coolDown: 3
   maxTimeEnergy: 2
   timeEnergy: 0
 --- !u!1 &1514304258
@@ -8961,44 +8866,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!1 &1563780240
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 1563780241}
-  - 114: {fileID: 1563780242}
-  m_Layer: 0
-  m_Name: SeekPoint2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1563780241
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1563780240}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.3844948, y: 0, z: -31.21838}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 416741667}
---- !u!114 &1563780242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1563780240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2200176241aef45b71167a11348ecd, type: 1}
-  m_Name: 
 --- !u!1 &1566175332
 GameObject:
   m_ObjectHideFlags: 0
@@ -9487,6 +9354,7 @@ GameObject:
   - 135: {fileID: 1629243682}
   - 23: {fileID: 1629243680}
   - 114: {fileID: 1629243684}
+  - 114: {fileID: 1629243685}
   - 114: {fileID: 1629243683}
   m_Layer: 0
   m_Name: food
@@ -9503,8 +9371,8 @@ Transform:
   m_GameObject: {fileID: 1629243678}
   m_LocalRotation: {x: 0, y: .314479887, z: 0, w: .949264228}
   m_LocalPosition: {x: -5.72230911, y: 1, z: -21.7654495}
-  m_LocalScale: {x: .381705105, y: .275836796, z: 2.89867544}
-  m_LocalEulerAnglesHint: {x: 0, y: 36.658844, z: 0}
+  m_LocalScale: {x: .370000154, y: .370000154, z: 2.89867544}
+  m_LocalEulerAnglesHint: {x: 0, y: 36.6588364, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &1629243680
@@ -9520,7 +9388,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9533,7 +9401,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 181518947}
   m_GameObject: {fileID: 1629243678}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &1629243682
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9563,6 +9431,19 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 181518947}
+  m_GameObject: {fileID: 1629243678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1629243685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 181518947}
   m_GameObject: {fileID: 1629243678}
@@ -9889,6 +9770,7 @@ GameObject:
   - 135: {fileID: 1672659791}
   - 23: {fileID: 1672659789}
   - 114: {fileID: 1672659793}
+  - 114: {fileID: 1672659794}
   - 114: {fileID: 1672659792}
   m_Layer: 0
   m_Name: food
@@ -9905,8 +9787,8 @@ Transform:
   m_GameObject: {fileID: 1672659787}
   m_LocalRotation: {x: 0, y: -.536084235, z: 0, w: .84416455}
   m_LocalPosition: {x: 28.3569355, y: 1, z: 14.2820969}
-  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
-  m_LocalEulerAnglesHint: {x: 0, y: -64.8349609, z: 0}
+  m_LocalScale: {x: .370000154, y: .370000154, z: .370000154}
+  m_LocalEulerAnglesHint: {x: 0, y: -64.8349686, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &1672659789
@@ -9922,7 +9804,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9935,7 +9817,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1897747148}
   m_GameObject: {fileID: 1672659787}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &1672659791
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9965,6 +9847,19 @@ MonoBehaviour:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897747148}
+  m_GameObject: {fileID: 1672659787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1672659794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 1897747148}
   m_GameObject: {fileID: 1672659787}
@@ -10982,7 +10877,6 @@ GameObject:
   - 143: {fileID: 1803568644}
   - 54: {fileID: 1803568648}
   - 114: {fileID: 1803568647}
-  - 114: {fileID: 1803568646}
   - 114: {fileID: 1803568650}
   - 114: {fileID: 1803568645}
   - 65: {fileID: 1803568649}
@@ -11054,22 +10948,6 @@ MonoBehaviour:
   m_Name: 
   health: 10
   bDamage: {fileID: 11400000, guid: e9f98923eefc2ed4da03d46642abe52d, type: 2}
---- !u!114 &1803568646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: c78a9e00feca60341a0d555cc979e019,
-    type: 2}
-  m_PrefabInternal: {fileID: 119219464}
-  m_GameObject: {fileID: 1803568641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a7663120df3cf64995f2717a4fb68fc, type: 1}
-  m_Name: 
-  inputDx: 0
-  inputDy: 0
-  inMoveRate: 10
-  inYawRate: 400
-  isFacing: 0
 --- !u!114 &1803568647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11082,12 +10960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38beb4d34aac02a4e804cec32702f119, type: 1}
   m_Name: 
   speed: 5
-  wanderYaw: .579999983
-  foeTurnRate: 180
-  seekPointObject:
-  - {fileID: 0}
-  seekPoint: {x: 0, y: 0, z: 0}
-  myMoveObj: {fileID: 0}
 --- !u!54 &1803568648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11557,6 +11429,7 @@ GameObject:
   - 135: {fileID: 1873287623}
   - 23: {fileID: 1873287621}
   - 114: {fileID: 1873287624}
+  - 114: {fileID: 1873287625}
   m_Layer: 0
   m_Name: food
   m_TagString: food
@@ -11572,8 +11445,8 @@ Transform:
   m_GameObject: {fileID: 1873287619}
   m_LocalRotation: {x: 0, y: .426793963, z: 0, w: .90434891}
   m_LocalPosition: {x: 8.75516701, y: 1, z: -0}
-  m_LocalScale: {x: .381705105, y: .275836796, z: 2.8986752}
-  m_LocalEulerAnglesHint: {x: 0, y: 50.5285339, z: 0}
+  m_LocalScale: {x: .370000154, y: .370000154, z: .370000154}
+  m_LocalEulerAnglesHint: {x: 0, y: 50.5285263, z: 0}
   m_Children: []
   m_Father: {fileID: 1524118589}
 --- !u!23 &1873287621
@@ -11589,7 +11462,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b5047843eba307b4e856f5376dbacfe0, type: 2}
+  - {fileID: 2100000, guid: 05fce41f40a4e134e946e5e9bd3304f3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -11602,7 +11475,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 750846113}
   m_GameObject: {fileID: 1873287619}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &1873287623
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11620,6 +11493,19 @@ SphereCollider:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 750846113}
+  m_GameObject: {fileID: 1873287619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 20
+  healthPills: 20
+--- !u!114 &1873287625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8d93ea59d69c7764c9ed962d410e4a5d,
     type: 2}
   m_PrefabInternal: {fileID: 750846113}
   m_GameObject: {fileID: 1873287619}
@@ -12583,44 +12469,6 @@ Transform:
   m_Children:
   - {fileID: 713749469}
   m_Father: {fileID: 2094666086}
---- !u!1 &2019078875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 3
-  m_Component:
-  - 4: {fileID: 2019078876}
-  - 114: {fileID: 2019078877}
-  m_Layer: 0
-  m_Name: SeekPoint1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2019078876
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2019078875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.1443977, y: 0, z: 35.4008102}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 416741667}
---- !u!114 &2019078877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2019078875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2200176241aef45b71167a11348ecd, type: 1}
-  m_Name: 
 --- !u!1 &2033774726
 GameObject:
   m_ObjectHideFlags: 0
