@@ -26,6 +26,8 @@ public class playerEnergy : MonoBehaviour
             energy = maxEnergy;
         energyLoss();
         playerSpeed();
+		if (energy < 0)
+			energy = 0;
     }
 
     private void OnTriggerEnter(Collider other)

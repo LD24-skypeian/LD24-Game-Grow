@@ -7,7 +7,12 @@ public class playerHealth : MonoBehaviour
     public int maxHealth = 100; //the maximum amount of health the player will have.
 
     private foodPills healthFood;
-
+	
+	public int Health{
+		get {return health;}
+		set {health = value;}
+	}
+	
     private void Awake()
     {
         healthFood = GameObject.Find("food").GetComponent<foodPills>();
@@ -22,6 +27,10 @@ public class playerHealth : MonoBehaviour
     {
         if (health > maxHealth)
             health = maxHealth;
+		if (health < 0){
+			Destroy(this.gameObject);
+//			Application.LoadLevel("GameOver");
+		}
     }
 
     private void OnTriggerEnter(Collider other)
