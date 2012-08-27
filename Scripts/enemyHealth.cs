@@ -20,6 +20,6 @@ public class enemyHealth : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "bullet")
-            health -= bDamage.bulletDamage;
+            health -= (int)bDamage.bulletDamage;
     }
 }

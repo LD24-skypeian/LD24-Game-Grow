@@ -8,9 +8,7 @@ public class GameManager : MonoBehaviour
 	private playerEnergy pEnergy;
 	private growPoints gPoints;
 	//public int phealth;
-
-	private int _currentLevel=1;
-
+	
 	private static BoxCollider Top;
 	private static BoxCollider Bot;
 	private static BoxCollider Left;
@@ -30,30 +28,22 @@ public class GameManager : MonoBehaviour
 
 	private void Update()
 	{
-		if (gPoints.GrowPointCount == 10)
-		{
-			switch (_currentLevel)
-			{
-			}
-		}
 	}
 
 	private void OnGUI()
 	{
 		GUI.skin = theGUI;
-		GUI.Label(new Rect(10, 10, 70, 20), "Health");
-		GUI.Label(new Rect(80, 10, 70, 20), pHealth.Health.ToString());
+		GUI.Label(new Rect(10, 10, 90, 20), "Health");
+		GUI.Label(new Rect(100, 10, 90, 20), pHealth.Health.ToString());
 
-		GUI.Label(new Rect(10, 30, 70, 20), "Energy");
-		GUI.Label(new Rect(80, 30, 70, 20), pEnergy.Energy.ToString());
+		GUI.Label(new Rect(10, 30, 90, 20), "Energy");
+		GUI.Label(new Rect(100, 30, 90, 20), pEnergy.Energy.ToString());
 
-		GUI.Label(new Rect(10, 50, 70, 20), "Speed");
-		GUI.Label(new Rect(80, 50, 70, 20), TadPoleMovementController.speed.ToString());
+		GUI.Label(new Rect(10, 50, 90, 20), "Speed");
+		GUI.Label(new Rect(100, 50, 90, 20), TadPoleMovementController.speed.ToString());
 
 		GUI.Label(new Rect(10, 70, 90, 20), "Grow Points");
-		GUI.Label(new Rect(80, 70, 70, 20), growPoints.GrowPoints.ToString());
-
-		//GUI.Label(new Rect(10, 100, 70, 40), "Timer");
+		GUI.Label(new Rect(100, 70, 90, 20), growPoints.GrowPoints.ToString());
 	}
 
 	public static void WrapToScreen(GameObject go)

@@ -28,7 +28,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.52673984, y: .863253653, z: -2.14216042}
   m_LocalScale: {x: .104212217, y: .152656376, z: .854083002}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -67,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9c4cdeab88b9d469735ab2d675fc4f, type: 1}
   m_Name: 
   bulletSpeed: 25
-  bulletDamage: 3
+  bulletDamage: 62.021965
   bulletLife: 3
   bulletDirection: {x: 0, y: 0, z: 0}
 --- !u!135 &13500000

@@ -13,7 +13,7 @@ public class playerEnergy : MonoBehaviour
     public float maxTimeEnergy = 2f;
     public float timeEnergy;
 
-    private foodPills energyFood;
+    public foodPills energyFood;
     private playerHealth pHealth;
 
     public int Energy
@@ -24,7 +24,7 @@ public class playerEnergy : MonoBehaviour
 
     private void Awake()
     {
-        energyFood = GameObject.FindWithTag("food").GetComponent<foodPills>();
+        //energyFood = GameObject.FindWithTag("food").GetComponent<foodPills>();
         pHealth = gameObject.GetComponent<playerHealth>();
     }
 

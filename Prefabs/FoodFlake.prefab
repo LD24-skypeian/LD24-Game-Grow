@@ -12,9 +12,11 @@ GameObject:
   - 23: {fileID: 2300000}
   - 111: {fileID: 11100000}
   - 108: {fileID: 10800000}
+  - 65: {fileID: 6500000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: FoodFlake
-  m_TagString: Untagged
+  m_TagString: food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,9 +27,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -.739403307, y: 0, z: 0, w: .673262775}
-  m_LocalPosition: {x: 1.98751187, y: .827981591, z: -9.71364403}
-  m_LocalScale: {x: .176164165, y: .176164165, z: .176164165}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -26.3008957, y: .150004253, z: 37.4072037}
+  m_LocalScale: {x: .176164001, y: .176164001, z: .176164001}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -55,6 +57,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 4300000, guid: 26a7efe6aa754a247a70ec72baefeb1d, type: 3}
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 20.0000019, z: 5}
+  m_Center: {x: 0, y: 0, z: 2.5}
 --- !u!108 &10800000
 Light:
   m_ObjectHideFlags: 1
@@ -64,9 +78,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: .607843161, g: .486274511, b: .192156866, a: 1}
-  m_Intensity: 5.25
-  m_Range: 1.03999996
+  m_Color: {r: 1, g: .727324903, b: .0671641827, a: 1}
+  m_Intensity: 8
+  m_Range: 4.4395504
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -83,7 +97,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_Lightmapping: 1
   m_ShadowSamples: 1
   m_ShadowRadius: 0
@@ -107,6 +121,18 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
+  m_Name: 
+  energyPills: 10
+  healthPills: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

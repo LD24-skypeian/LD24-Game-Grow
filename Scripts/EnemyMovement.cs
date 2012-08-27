@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 3.0f;
 
     // Use this for initialization
     private void Awake()
