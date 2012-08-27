@@ -30,7 +30,7 @@ public class playerShoot : MonoBehaviour
 		if (attackTimer < 0){
 			attackTimer = 0;
 		}
-		if (Input.GetKey(KeyCode.Space)){
+		if ((Input.GetKey(KeyCode.Space)) && (GetComponent<playerEnergy>().energy > 5)){
 			if(attackTimer == 0){
 				buttonToShoot();
 				attackTimer = coolDown;

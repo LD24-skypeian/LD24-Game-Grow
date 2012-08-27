@@ -62,7 +62,7 @@ public class playerEnergy : MonoBehaviour
             TadPoleMovementController.speed = TadPoleMovementController.baseSpeed * .15f;
         }
 
-        if (gameObject.GetComponentInChildren<playerShoot>().isCreated == false)
+        if ((gameObject.GetComponentInChildren<playerShoot>().isCreated == false) && (energy > 5))
         {
             energy -= bulletEnergy;
         }
