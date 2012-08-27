@@ -1,11 +1,8 @@
 using UnityEngine;
-using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
     public float speed = 1.0f;
-
-
 
     // Use this for initialization
     private void Awake()
@@ -19,5 +16,4 @@ public class EnemyMovement : MonoBehaviour
 
         GameManager.WrapToScreen(gameObject);
     }
-
 }

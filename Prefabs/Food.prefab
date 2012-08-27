@@ -12,7 +12,6 @@ GameObject:
   - 135: {fileID: 13500000}
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Food
   m_TagString: food
@@ -26,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: .314479887, z: 0, w: .949264228}
-  m_LocalPosition: {x: -5.72230911, y: 1, z: -21.7654495}
+  m_LocalRotation: {x: 0, y: .782989442, z: 0, w: .622035086}
+  m_LocalPosition: {x: -32.6794739, y: 1, z: 14.2820969}
   m_LocalScale: {x: .370000154, y: .370000154, z: .370000154}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,18 +56,6 @@ MeshFilter:
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a377269b96ef7dd448f505d721c7eb2b, type: 1}
-  m_Name: 
-  energyPills: 20
-  healthPills: 20
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

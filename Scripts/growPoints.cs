@@ -4,44 +4,24 @@ using UnityEngine;
 
 public class growPoints : MonoBehaviour
 {
-    private float timer = 0f;
-    private float coolDown = 6.0f;
-    public static int GrowPoints = 0; //the grow points
+    public static int GrowPoints;
+    public static int FoodCount;
 
-    private void Update()
+    public int GrowPointRate = 2;
+
+    public int GrowPointCount;
+    public int FoodCountCount;
+
+    void Update()
     {
-        timeUntilGP();
-    }
-	
-    //if the player hits something, it resets the counter, otherwise, after 6 seconds, the player gains a GP
-    private void timeUntilGP()
-    {
-        if (timer > 0)
+        // debug to show in the inspector
+        GrowPointCount = GrowPoints;
+        FoodCountCount = FoodCount;
+
+        if (FoodCount == GrowPointRate)
         {
-            timer -= Time.deltaTime;
+            GrowPoints++;
+            FoodCount = 0;
         }
-
-        if (timer < 0)
-        {
-            timer = 0f;
-        }
-
-        if (timer <= 0)
-        {
-            timer = coolDown;
-            growPointCounter();
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag.Contains("Enemy"))
-            timer = coolDown;
-    }
-
-    //player gains GP.
-    private void growPointCounter()
-    {
-        GrowPoints += 1;
     }
 }

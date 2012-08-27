@@ -19,6 +19,10 @@ public class TadPoleMovementController : MonoBehaviour
     
     private void Awake()
     {
+        if (fixedCamera == null)
+        {
+            fixedCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        }
     }
 
     private void Update()

@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 790e2d357d6e4c445afd2d0b5991785f
+guid: ba55411991a99cf40a9b8c7676991e4e
 ModelImporter:
   fileIDToRecycleName:
     4300000: humming_bird
-    7400000: Take 001 //// humming_bird_textured
-    7400002: idle //// humming_bird_textured
-    7400004: WingFlap //// humming_bird_textured
+    7400000: Take 001 //// humingbirdanim
   serializedVersion: 10
   materials:
     importMaterials: 1
@@ -20,12 +18,7 @@ ModelImporter:
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    clipAnimations:
-    - name: WingFlap
-      firstFrame: 1
-      lastFrame: 99
-      wrapMode: 2
-      loop: 1
+    clipAnimations: []
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -48,20 +41,20 @@ ModelImporter:
     //RootNode:
       data:
         first: 1
-        second: ae860100
+        second: a6860100
       data:
         first: 4
-        second: 8e1a0600
+        second: 861a0600
       data:
         first: 111
         second: 605fa900
     CATRigHub001:
       data:
         first: 1
-        second: a4860100
+        second: ac860100
       data:
         first: 4
-        second: 841a0600
+        second: 8c1a0600
     CATRigHub001Bone001:
       data:
         first: 1
@@ -72,55 +65,52 @@ ModelImporter:
     CATRigHub001Bone002:
       data:
         first: 1
-        second: a0860100
-      data:
-        first: 4
-        second: 801a0600
-    CATRigHub001Bone003:
-      data:
-        first: 1
         second: b0860100
       data:
         first: 4
         second: 901a0600
+    CATRigHub001Bone003:
+      data:
+        first: 1
+        second: ae860100
+      data:
+        first: 4
+        second: 8e1a0600
     CATRigHub001Bone003Bone001:
       data:
         first: 1
-        second: a6860100
+        second: a4860100
       data:
         first: 4
-        second: 861a0600
+        second: 841a0600
     CATRigHub001Bone004:
-      data:
-        first: 1
-        second: aa860100
-      data:
-        first: 4
-        second: 8a1a0600
-    CATRigHub001Bone004Bone001:
-      data:
-        first: 1
-        second: a8860100
-      data:
-        first: 4
-        second: 881a0600
-    Character001:
-      data:
-        first: 1
-        second: ac860100
-      data:
-        first: 4
-        second: 8c1a0600
-    humming_bird:
       data:
         first: 1
         second: a2860100
       data:
         first: 4
         second: 821a0600
+    CATRigHub001Bone004Bone001:
       data:
-        first: 23
-        second: 60182300
+        first: 1
+        second: a0860100
       data:
-        first: 33
-        second: a05a3200
+        first: 4
+        second: 801a0600
+    Character001:
+      data:
+        first: 1
+        second: aa860100
+      data:
+        first: 4
+        second: 8a1a0600
+    humming_bird:
+      data:
+        first: 1
+        second: a8860100
+      data:
+        first: 4
+        second: 881a0600
+      data:
+        first: 137
+        second: a00bd100

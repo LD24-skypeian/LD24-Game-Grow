@@ -11,7 +11,7 @@ public class foodPills : MonoBehaviour
     {
         pHealth = GameObject.FindWithTag("Player").GetComponent<playerHealth>();
     }
-    
+
     private void OnTriggerEnter(Collider collider)
     {
         //Debug.Log("trigger tag:" + collider.gameObject.tag);
@@ -19,19 +19,19 @@ public class foodPills : MonoBehaviour
         {
             playerHealthCheck();
             Destroy(gameObject);
-		}
+        }
     }
 
     //checks if the player is at full hp, if he is, the energy pills will get all of the energy and health points.
     private void playerHealthCheck()
     {
-        if (pHealth.health == pHealth.maxHealth)
+        if (pHealth.Health == pHealth.maxHealth)
         {
             energyPills = energyPills + healthPills;
         }
-        //else
-        //{
-        //    energyPills = energyPills;
-        //}
+        else
+        {
+            energyPills += energyPills;
+        }
     }
 }
